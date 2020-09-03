@@ -59,7 +59,6 @@
                                   <Component id="Jpanel56" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
@@ -125,7 +124,7 @@
                                   <Component id="jLabel5" min="-2" pref="108" max="-2" attributes="0"/>
                                   <Component id="txt_CantAcumAnterior" alignment="0" min="-2" pref="84" max="-2" attributes="0"/>
                                   <Component id="txt_CantAcumActual" alignment="0" min="-2" pref="84" max="-2" attributes="0"/>
-                                  <Component id="txt_DescuentoProdEnt" alignment="0" min="-2" pref="84" max="-2" attributes="0"/>
+                                  <Component id="txt_CantidadAvance" alignment="0" min="-2" pref="84" max="-2" attributes="0"/>
                               </Group>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
@@ -150,7 +149,7 @@
                               </Group>
                           </Group>
                           <Group type="102" attributes="0">
-                              <Component id="txt_CantEntInventario" min="-2" pref="84" max="-2" attributes="0"/>
+                              <Component id="txt_CantContractual" min="-2" pref="84" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="txt_PrecioContratado" min="-2" pref="88" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -163,7 +162,7 @@
                               </Group>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="txt_EspecificacionProducto1" min="-2" pref="209" max="-2" attributes="0"/>
+                                  <Component id="txt_NombreItem" min="-2" pref="209" max="-2" attributes="0"/>
                                   <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
@@ -177,7 +176,7 @@
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="cbo_EstadoProDent1" min="-2" pref="130" max="-2" attributes="0"/>
+                                  <Component id="cbo_Estado" min="-2" pref="130" max="-2" attributes="0"/>
                                   <Component id="txt_CantSaldoActual" alignment="0" min="-2" pref="84" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -189,31 +188,40 @@
                           <Component id="jLabel17" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
                               <Component id="btn_buscar1" max="32767" attributes="0"/>
-                              <Component id="txt_EspecificacionProducto" alignment="0" max="32767" attributes="0"/>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jLabel10" alignment="0" min="-2" pref="101" max="-2" attributes="0"/>
-                                      <Group type="103" alignment="0" groupAlignment="1" attributes="0">
-                                          <Component id="jLabel11" min="-2" max="-2" attributes="0"/>
-                                          <Group type="102" attributes="0">
-                                              <Component id="txt_CantSalInventario" min="-2" pref="56" max="-2" attributes="0"/>
-                                              <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="txt_IdPresupuesto" min="-2" pref="51" max="-2" attributes="0"/>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                      <Component id="txt_Responsable" alignment="0" max="32767" attributes="0"/>
+                                      <Group type="102" attributes="0">
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="jLabel10" alignment="0" min="-2" pref="67" max="-2" attributes="0"/>
+                                              <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                                                  <Component id="txt_IdAvance" min="-2" pref="56" max="-2" attributes="0"/>
+                                                  <Component id="jLabel23" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                                                  <Component id="jLabel11" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
+                                                  <Component id="jLabel22" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Component id="txt_IdPresupuesto" min="-2" pref="51" max="-2" attributes="0"/>
+                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                                  <Component id="txt_FechaAvance" min="-2" pref="146" max="-2" attributes="0"/>
+                                              </Group>
                                           </Group>
                                       </Group>
                                   </Group>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="dc_FechaEntrada" alignment="0" min="-2" pref="146" max="-2" attributes="0"/>
-                                      <Component id="jLabel22" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  </Group>
+                                  <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <Component id="jLabel23" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="1" max="-2" attributes="0">
                                   <Component id="jLabel12" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="txt_IdItem1" alignment="0" pref="43" max="32767" attributes="0"/>
+                                  <Component id="txt_IdItem" alignment="0" pref="43" max="32767" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
@@ -231,26 +239,25 @@
                   <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="1" attributes="0">
                           <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel11" alignment="1" min="-2" pref="13" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jLabel10" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel11" alignment="3" min="-2" pref="13" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="txt_CantSalInventario" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txt_IdAvance" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="txt_IdPresupuesto" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txt_FechaAvance" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <Group type="102" attributes="0">
                               <Component id="jLabel22" min="-2" pref="13" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
-                              <Component id="dc_FechaEntrada" min="-2" pref="24" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace max="-2" attributes="0"/>
                       <Component id="jLabel23" min="-2" pref="13" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
-                      <Component id="txt_EspecificacionProducto" min="-2" max="-2" attributes="0"/>
+                      <Component id="txt_Responsable" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="btn_buscar1" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
@@ -261,7 +268,7 @@
                       <EmptySpace max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="txt_UnidadItem" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txt_IdItem1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txt_IdItem" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -269,7 +276,7 @@
                           <Component id="jLabel6" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
                       </Group>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="txt_EspecificacionProducto1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txt_NombreItem" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="txt_NombreProducto" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
@@ -280,7 +287,7 @@
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="txt_CantEntInventario" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txt_CantContractual" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="txt_PrecioContratado" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="txt_SubTotalContratado" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
@@ -292,7 +299,7 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="txt_SubTotalAvance" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txt_DescuentoProdEnt" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txt_CantidadAvance" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -322,7 +329,7 @@
                               <Component id="txt_CantSaldoActual" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="cbo_EstadoProDent1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="cbo_Estado" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabel14" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
@@ -366,7 +373,7 @@
                 <Property name="text" type="java.lang.String" value="Nombre Item"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="txt_EspecificacionProducto">
+            <Component class="javax.swing.JTextField" name="txt_Responsable">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="12" style="3"/>
@@ -426,7 +433,7 @@
                 <Property name="text" type="java.lang.String" value="Cantidad Avance"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="txt_DescuentoProdEnt">
+            <Component class="javax.swing.JTextField" name="txt_CantidadAvance">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="12" style="3"/>
@@ -533,7 +540,7 @@
                 </Property>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="txt_CantEntInventario">
+            <Component class="javax.swing.JTextField" name="txt_CantContractual">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="12" style="3"/>
@@ -573,7 +580,7 @@
                 <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
               </AuxValues>
             </Component>
-            <Component class="javax.swing.JTextField" name="txt_CantSalInventario">
+            <Component class="javax.swing.JTextField" name="txt_IdAvance">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="12" style="3"/>
@@ -587,7 +594,7 @@
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txt_CantSalInventarioActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txt_IdAvanceActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JTextField" name="txt_IdPresupuesto">
@@ -633,19 +640,6 @@
                 <Property name="text" type="java.lang.String" value="ID Item"/>
               </Properties>
             </Component>
-            <Component class="com.toedter.calendar.JDateChooser" name="dc_FechaEntrada">
-              <Properties>
-                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="66" green="0" red="0" type="rgb"/>
-                </Property>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Tahoma" size="12" style="3"/>
-                </Property>
-              </Properties>
-              <AuxValues>
-                <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
-              </AuxValues>
-            </Component>
             <Component class="javax.swing.JLabel" name="jLabel22">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -657,7 +651,7 @@
                 <Property name="text" type="java.lang.String" value="Fecha de avance"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JComboBox" name="cbo_EstadoProDent1">
+            <Component class="javax.swing.JComboBox" name="cbo_Estado">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="12" style="3"/>
@@ -679,7 +673,7 @@
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cbo_EstadoProDent1ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cbo_EstadoActionPerformed"/>
               </Events>
               <AuxValues>
                 <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
@@ -882,7 +876,7 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_buscar1ActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JTextField" name="txt_EspecificacionProducto1">
+            <Component class="javax.swing.JTextField" name="txt_NombreItem">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="12" style="3"/>
@@ -909,14 +903,14 @@
                 <Property name="text" type="java.lang.String" value="Responsable"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="txt_IdItem1">
+            <Component class="javax.swing.JTextField" name="txt_IdItem">
               <Properties>
                 <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
                   <Dimension value="[30, 25]"/>
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txt_IdItem1ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txt_IdItemActionPerformed"/>
               </Events>
               <AuxValues>
                 <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
@@ -932,6 +926,16 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Unidad Item"/>
               </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txt_FechaAvance">
+              <Properties>
+                <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[30, 25]"/>
+                </Property>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+              </AuxValues>
             </Component>
           </SubComponents>
         </Container>
@@ -1013,6 +1017,9 @@
                   <Color PropertyName="color" blue="66" green="0" red="0" type="rgb"/>
                 </TitledBorder>
               </Border>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="66" green="0" red="0" type="rgb"/>
             </Property>
           </Properties>
 

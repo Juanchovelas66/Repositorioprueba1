@@ -5,6 +5,8 @@
  */
 package pruebas;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Gladys Lopera
@@ -31,11 +33,11 @@ public class VAvances extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        txt_EspecificacionProducto = new javax.swing.JTextField();
+        txt_Responsable = new javax.swing.JTextField();
         btn_cancelar = new javax.swing.JButton();
         txt_NombreProducto = new javax.swing.JTextField();
         jLabel13 = new javax.swing.JLabel();
-        txt_DescuentoProdEnt = new javax.swing.JTextField();
+        txt_CantidadAvance = new javax.swing.JTextField();
         jLabel14 = new javax.swing.JLabel();
         Subtotal = new javax.swing.JLabel();
         btn_nuevo1 = new javax.swing.JButton();
@@ -43,17 +45,16 @@ public class VAvances extends javax.swing.JFrame {
         Subtotal1 = new javax.swing.JLabel();
         Subtotal2 = new javax.swing.JLabel();
         txt_AcumSubtoAnteior = new javax.swing.JTextField();
-        txt_CantEntInventario = new javax.swing.JTextField();
+        txt_CantContractual = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
         txt_UnidadItem = new javax.swing.JTextField();
-        txt_CantSalInventario = new javax.swing.JTextField();
+        txt_IdAvance = new javax.swing.JTextField();
         txt_IdPresupuesto = new javax.swing.JTextField();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
-        dc_FechaEntrada = new com.toedter.calendar.JDateChooser();
         jLabel22 = new javax.swing.JLabel();
-        cbo_EstadoProDent1 = new javax.swing.JComboBox<>();
+        cbo_Estado = new javax.swing.JComboBox<>();
         txt_SubTotalAvance = new javax.swing.JTextField();
         txt_PrecioContratado = new javax.swing.JTextField();
         txt_SubTotalContratado = new javax.swing.JTextField();
@@ -69,10 +70,11 @@ public class VAvances extends javax.swing.JFrame {
         txt_SaldoActual = new javax.swing.JTextField();
         Subtotal5 = new javax.swing.JLabel();
         btn_buscar1 = new javax.swing.JButton();
-        txt_EspecificacionProducto1 = new javax.swing.JTextField();
+        txt_NombreItem = new javax.swing.JTextField();
         jLabel23 = new javax.swing.JLabel();
-        txt_IdItem1 = new javax.swing.JTextField();
+        txt_IdItem = new javax.swing.JTextField();
         jLabel18 = new javax.swing.JLabel();
+        txt_FechaAvance = new javax.swing.JTextField();
         jPanel3 = new javax.swing.JPanel();
         jLabel28 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
@@ -130,9 +132,9 @@ public class VAvances extends javax.swing.JFrame {
         jLabel6.setForeground(new java.awt.Color(0, 0, 102));
         jLabel6.setText("Nombre Item");
 
-        txt_EspecificacionProducto.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
-        txt_EspecificacionProducto.setForeground(new java.awt.Color(0, 0, 102));
-        txt_EspecificacionProducto.setPreferredSize(new java.awt.Dimension(30, 25));
+        txt_Responsable.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
+        txt_Responsable.setForeground(new java.awt.Color(0, 0, 102));
+        txt_Responsable.setPreferredSize(new java.awt.Dimension(30, 25));
 
         btn_cancelar.setBackground(new java.awt.Color(255, 255, 255));
         btn_cancelar.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -148,9 +150,9 @@ public class VAvances extends javax.swing.JFrame {
         jLabel13.setForeground(new java.awt.Color(0, 0, 102));
         jLabel13.setText("Cantidad Avance");
 
-        txt_DescuentoProdEnt.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
-        txt_DescuentoProdEnt.setForeground(new java.awt.Color(0, 0, 102));
-        txt_DescuentoProdEnt.setPreferredSize(new java.awt.Dimension(30, 25));
+        txt_CantidadAvance.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
+        txt_CantidadAvance.setForeground(new java.awt.Color(0, 0, 102));
+        txt_CantidadAvance.setPreferredSize(new java.awt.Dimension(30, 25));
 
         jLabel14.setBackground(new java.awt.Color(0, 0, 102));
         jLabel14.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
@@ -193,9 +195,9 @@ public class VAvances extends javax.swing.JFrame {
         txt_AcumSubtoAnteior.setForeground(new java.awt.Color(0, 0, 102));
         txt_AcumSubtoAnteior.setPreferredSize(new java.awt.Dimension(30, 25));
 
-        txt_CantEntInventario.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
-        txt_CantEntInventario.setForeground(new java.awt.Color(0, 0, 102));
-        txt_CantEntInventario.setPreferredSize(new java.awt.Dimension(30, 25));
+        txt_CantContractual.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
+        txt_CantContractual.setForeground(new java.awt.Color(0, 0, 102));
+        txt_CantContractual.setPreferredSize(new java.awt.Dimension(30, 25));
 
         jLabel5.setBackground(new java.awt.Color(0, 0, 102));
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
@@ -209,13 +211,13 @@ public class VAvances extends javax.swing.JFrame {
             }
         });
 
-        txt_CantSalInventario.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
-        txt_CantSalInventario.setForeground(new java.awt.Color(0, 0, 102));
-        txt_CantSalInventario.setText("0");
-        txt_CantSalInventario.setPreferredSize(new java.awt.Dimension(30, 25));
-        txt_CantSalInventario.addActionListener(new java.awt.event.ActionListener() {
+        txt_IdAvance.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
+        txt_IdAvance.setForeground(new java.awt.Color(0, 0, 102));
+        txt_IdAvance.setText("0");
+        txt_IdAvance.setPreferredSize(new java.awt.Dimension(30, 25));
+        txt_IdAvance.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txt_CantSalInventarioActionPerformed(evt);
+                txt_IdAvanceActionPerformed(evt);
             }
         });
 
@@ -233,19 +235,16 @@ public class VAvances extends javax.swing.JFrame {
         jLabel12.setForeground(new java.awt.Color(0, 0, 102));
         jLabel12.setText("ID Item");
 
-        dc_FechaEntrada.setForeground(new java.awt.Color(0, 0, 102));
-        dc_FechaEntrada.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
-
         jLabel22.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
         jLabel22.setForeground(new java.awt.Color(0, 0, 102));
         jLabel22.setText("Fecha de avance");
 
-        cbo_EstadoProDent1.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
-        cbo_EstadoProDent1.setForeground(new java.awt.Color(0, 0, 102));
-        cbo_EstadoProDent1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Activo", "Inactivo", "Abierto", "Cerrado", "Suspendido", "Eliminado", "Otro", " " }));
-        cbo_EstadoProDent1.addActionListener(new java.awt.event.ActionListener() {
+        cbo_Estado.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
+        cbo_Estado.setForeground(new java.awt.Color(0, 0, 102));
+        cbo_Estado.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Activo", "Inactivo", "Abierto", "Cerrado", "Suspendido", "Eliminado", "Otro", " " }));
+        cbo_Estado.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cbo_EstadoProDent1ActionPerformed(evt);
+                cbo_EstadoActionPerformed(evt);
             }
         });
 
@@ -319,24 +318,26 @@ public class VAvances extends javax.swing.JFrame {
             }
         });
 
-        txt_EspecificacionProducto1.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
-        txt_EspecificacionProducto1.setForeground(new java.awt.Color(0, 0, 102));
-        txt_EspecificacionProducto1.setPreferredSize(new java.awt.Dimension(30, 25));
+        txt_NombreItem.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
+        txt_NombreItem.setForeground(new java.awt.Color(0, 0, 102));
+        txt_NombreItem.setPreferredSize(new java.awt.Dimension(30, 25));
 
         jLabel23.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
         jLabel23.setForeground(new java.awt.Color(0, 0, 102));
         jLabel23.setText("Responsable");
 
-        txt_IdItem1.setPreferredSize(new java.awt.Dimension(30, 25));
-        txt_IdItem1.addActionListener(new java.awt.event.ActionListener() {
+        txt_IdItem.setPreferredSize(new java.awt.Dimension(30, 25));
+        txt_IdItem.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txt_IdItem1ActionPerformed(evt);
+                txt_IdItemActionPerformed(evt);
             }
         });
 
         jLabel18.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
         jLabel18.setForeground(new java.awt.Color(0, 0, 102));
         jLabel18.setText("Unidad Item");
+
+        txt_FechaAvance.setPreferredSize(new java.awt.Dimension(30, 25));
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -350,7 +351,7 @@ public class VAvances extends javax.swing.JFrame {
                             .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txt_CantAcumAnterior, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txt_CantAcumActual, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txt_DescuentoProdEnt, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(txt_CantidadAvance, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel2Layout.createSequentialGroup()
                                 .addGap(62, 62, 62)
@@ -369,7 +370,7 @@ public class VAvances extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(Subtotal3))))
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(txt_CantEntInventario, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txt_CantContractual, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(txt_PrecioContratado, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
@@ -380,7 +381,7 @@ public class VAvances extends javax.swing.JFrame {
                             .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txt_EspecificacionProducto1, javax.swing.GroupLayout.PREFERRED_SIZE, 209, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txt_NombreItem, javax.swing.GroupLayout.PREFERRED_SIZE, 209, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel6)))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(16, 16, 16)
@@ -391,7 +392,7 @@ public class VAvances extends javax.swing.JFrame {
                         .addComponent(btn_cancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(cbo_EstadoProDent1, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(cbo_Estado, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txt_CantSaldoActual, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addComponent(jLabel14))
@@ -401,25 +402,31 @@ public class VAvances extends javax.swing.JFrame {
                     .addComponent(jLabel17)
                     .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                         .addComponent(btn_buscar1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(txt_EspecificacionProducto, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel2Layout.createSequentialGroup()
-                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jLabel11)
-                                    .addGroup(jPanel2Layout.createSequentialGroup()
-                                        .addComponent(txt_CantSalInventario, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(txt_IdPresupuesto, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(dc_FechaEntrada, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jLabel22))))
-                    .addComponent(jLabel23)
+                        .addGroup(jPanel2Layout.createSequentialGroup()
+                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addComponent(txt_Responsable, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGroup(jPanel2Layout.createSequentialGroup()
+                                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addComponent(txt_IdAvance, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jLabel23)))
+                                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(jPanel2Layout.createSequentialGroup()
+                                            .addGap(26, 26, 26)
+                                            .addComponent(jLabel11)
+                                            .addGap(46, 46, 46)
+                                            .addComponent(jLabel22))
+                                        .addGroup(jPanel2Layout.createSequentialGroup()
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addComponent(txt_IdPresupuesto, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                            .addComponent(txt_FechaAvance, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                            .addGap(58, 58, 58)))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                             .addComponent(jLabel12, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(txt_IdItem1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 43, Short.MAX_VALUE))
+                            .addComponent(txt_IdItem, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 43, Short.MAX_VALUE))
                         .addGap(29, 29, 29)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(txt_UnidadItem, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -431,21 +438,20 @@ public class VAvances extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel10)
-                            .addComponent(jLabel11, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 13, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 13, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(txt_CantSalInventario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txt_IdPresupuesto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(txt_IdAvance, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txt_IdPresupuesto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txt_FechaAvance, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 13, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(12, 12, 12)
-                        .addComponent(dc_FechaEntrada, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGap(36, 36, 36)))
                 .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 13, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(6, 6, 6)
-                .addComponent(txt_EspecificacionProducto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(txt_Responsable, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btn_buscar1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -455,13 +461,13 @@ public class VAvances extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txt_UnidadItem, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txt_IdItem1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txt_IdItem, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
                     .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txt_EspecificacionProducto1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txt_NombreItem, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txt_NombreProducto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(6, 6, 6)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -470,7 +476,7 @@ public class VAvances extends javax.swing.JFrame {
                     .addComponent(Subtotal3))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txt_CantEntInventario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txt_CantContractual, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txt_PrecioContratado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txt_SubTotalContratado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -480,7 +486,7 @@ public class VAvances extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txt_SubTotalAvance, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txt_DescuentoProdEnt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txt_CantidadAvance, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel15)
@@ -505,7 +511,7 @@ public class VAvances extends javax.swing.JFrame {
                         .addComponent(txt_CantSaldoActual, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(cbo_EstadoProDent1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(cbo_Estado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(30, 30, 30)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -554,6 +560,7 @@ public class VAvances extends javax.swing.JFrame {
         );
 
         jPanel5.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 102), 2), "RESUMEN DE AVANCES", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 14), new java.awt.Color(0, 0, 102))); // NOI18N
+        jPanel5.setForeground(new java.awt.Color(0, 0, 102));
 
         txt_buscar.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
         txt_buscar.setForeground(new java.awt.Color(0, 0, 102));
@@ -976,8 +983,7 @@ public class VAvances extends javax.swing.JFrame {
                                     .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, 523, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGap(18, 18, 18)
                                     .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addComponent(Jpanel56, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                                .addComponent(Jpanel56, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addGap(20, 20, 20))
         );
         jPanel1Layout.setVerticalGroup(
@@ -1007,11 +1013,12 @@ public class VAvances extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn_nuevo1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_nuevo1ActionPerformed
-        habilitar();
+        //habilitar();
         btn_guardar.setText("Guardar");
-        accion = "guardar";
+       // accion = "guardar";
     }//GEN-LAST:event_btn_nuevo1ActionPerformed
-
+/*
+    
     private void btn_guardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_guardarActionPerformed
 
         if (txt_NombreProducto.getText().length() == 0) {
@@ -1020,45 +1027,19 @@ public class VAvances extends javax.swing.JFrame {
             return;
         }
 
-        if (txt_EspecificacionProducto.getText().length() == 0) {
+        if (txt_Responsable.getText().length() == 0) {
             JOptionPane.showConfirmDialog(rootPane, "Debes ingresar DESCUENTO");
-            txt_EspecificacionProducto.requestFocus();
+            txt_Responsable.requestFocus();
             return;
         }
 
-        if (txt_CantidadProducto.getText().length() == 0) {
-            JOptionPane.showConfirmDialog(rootPane, "Debes ingresar NEGOCIADOR");
-            txt_CantidadProducto.requestFocus();
-            return;
-        }
-
-        if (txt_MarcaProducto.getText().length() == 0) {
-            JOptionPane.showConfirmDialog(rootPane, "Debes ingresar TIPO ORDEN");
-            txt_MarcaProducto.requestFocus();
-            return;
-        }
-
-        if (txt_UnidadCompra.getText().length() == 0) {
+        if (txt_CantidadAvance.getText().length() == 0) {
             JOptionPane.showConfirmDialog(rootPane, "Debes ingresar TOTAL ORDEN");
-            txt_UnidadCompra.requestFocus();
-            return;
-        }
-        if (txt_PrecioNeto.getText().length() == 0) {
-            JOptionPane.showConfirmDialog(rootPane, "Debes ingresar TOTAL ORDEN");
-            txt_PrecioNeto.requestFocus();
-            return;
-        }
-        if (txt_DescuentoProdEnt.getText().length() == 0) {
-            JOptionPane.showConfirmDialog(rootPane, "Debes ingresar TOTAL ORDEN");
-            txt_DescuentoProdEnt.requestFocus();
+            txt_CantidadAvance.requestFocus();
             return;
         }
 
-        if (txt_ImpuestoProdEnt.getText().length() == 0) {
-            JOptionPane.showConfirmDialog(rootPane, "Debes ingresar IMPUESTO");
-            txt_ImpuestoProdEnt.requestFocus();
-            return;
-        }
+   
 
         if (txt_AcumSubtoAnteior.getText().length() == 0) {
             JOptionPane.showConfirmDialog(rootPane, "Debes ingresar OBSERVACIONES");
@@ -1070,11 +1051,11 @@ public class VAvances extends javax.swing.JFrame {
         CDetalleEntradaAlmacen func = new CDetalleEntradaAlmacen();
 
         subtotalproducto = (Double.parseDouble(txt_CantidadProducto.getText())) * (Double.parseDouble(txt_PrecioNeto.getText()));
-        descuentoproducto = subtotalproducto * (Double.parseDouble(txt_DescuentoProdEnt.getText())) / 100;
+        descuentoproducto = subtotalproducto * (Double.parseDouble(txt_CantidadAvance.getText())) / 100;
         impuestoproducto = subtotalproducto * (Double.parseDouble(txt_ImpuestoProdEnt.getText())) / 100;
         cantinventario = (Double.parseDouble(txt_CantidadProducto.getText())) * (Double.parseDouble(txt_RelacionUcUp.getText()));
         txt_SubtotalProdEnt.setText(Double.toString(subtotalproducto));
-        txt_CantEntInventario.setText(Double.toString(cantinventario));
+        txt_CantContractual.setText(Double.toString(cantinventario));
 
         dts.setIdEntrada(Integer.parseInt(txt_IdEntrada.getText()));
         Calendar cal;
@@ -1091,8 +1072,8 @@ public class VAvances extends javax.swing.JFrame {
         dts.setRelacionUcUp(Double.parseDouble(txt_RelacionUcUp.getText()));
         dts.setMarcaProdEnt(txt_MarcaProducto.getText());
         dts.setCantidadEnt(Double.parseDouble(txt_CantidadProducto.getText()));
-        dts.setCantEntInventario(Double.parseDouble(txt_CantEntInventario.getText()));
-        dts.setCantSalInventario(Double.parseDouble(txt_CantSalInventario.getText()));
+        dts.setCantEntInventario(Double.parseDouble(txt_CantContractual.getText()));
+        dts.setCantSalInventario(Double.parseDouble(txt_IdAvance.getText()));
         dts.setPrecioNetoProdEnt(Double.parseDouble(txt_PrecioNeto.getText()));
         dts.setDescuentoProdEnt(descuentoproducto);
         //dts.setDescuentoProducto(Double.parseDouble(txt_DescuentoProducto.getText()));
@@ -1120,25 +1101,25 @@ public class VAvances extends javax.swing.JFrame {
 
         }
     }//GEN-LAST:event_btn_guardarActionPerformed
-
+*/
     private void txt_UnidadItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_UnidadItemActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txt_UnidadItemActionPerformed
 
-    private void txt_CantSalInventarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_CantSalInventarioActionPerformed
+    private void txt_IdAvanceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_IdAvanceActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txt_CantSalInventarioActionPerformed
+    }//GEN-LAST:event_txt_IdAvanceActionPerformed
 
-    private void cbo_EstadoProDent1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbo_EstadoProDent1ActionPerformed
+    private void cbo_EstadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbo_EstadoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_cbo_EstadoProDent1ActionPerformed
+    }//GEN-LAST:event_cbo_EstadoActionPerformed
 
     private void btn_buscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_buscarActionPerformed
-        mostrar(txt_IdEntrada.getText());
+       // mostrar(txt_IdEntrada.getText());
     }//GEN-LAST:event_btn_buscarActionPerformed
 
     private void btn_eliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_eliminarActionPerformed
-
+/*
         if (!txt_UnidadItem.getText().equals("")) {
             int confirmacion = JOptionPane.showConfirmDialog(rootPane, "Estas seguro de ELIMINAR el trabajador?", "confirmar", 2);
             if (confirmacion == 0) {
@@ -1153,6 +1134,7 @@ public class VAvances extends javax.swing.JFrame {
             }
 
         }
+        */
     }//GEN-LAST:event_btn_eliminarActionPerformed
 
     private void btn_salirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_salirActionPerformed
@@ -1168,8 +1150,8 @@ public class VAvances extends javax.swing.JFrame {
         txt_NombreProductoDetalle.setText(TablaInventario.getValueAt(fila, 1).toString());
         txt_EspecificacionProductoDetalle.setText(TablaInventario.getValueAt(fila, 2).toString());
 
-        mostrarDetalleProducto(txt_IdDetalleProducto.getText());
-        ocultar_detalleProducto();
+       // mostrarDetalleProducto(txt_IdDetalleProducto.getText());
+        //ocultar_detalleProducto();
     }//GEN-LAST:event_TablaInventarioMouseClicked
 
     private void txt_IdProveedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_IdProveedorActionPerformed
@@ -1189,11 +1171,11 @@ public class VAvances extends javax.swing.JFrame {
     }//GEN-LAST:event_txt_SaldoActionPerformed
 
     private void TablaListadoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TablaListadoMouseClicked
-
+/*
         // TODO add your handling code here:
         //EVENTO PARA ENVIAR DATOS DE LA TABLA HACIA CADA CAJA DE TEXTO Y OCMBO
         btn_guardar.setText("Editar");
-        habilitar();
+        //habilitar();
         //btn_buscarUuniversal.setEnabled(false);
         btn_eliminar.setEnabled(true);
         accion = "editar";
@@ -1207,7 +1189,7 @@ public class VAvances extends javax.swing.JFrame {
         //LA fecha solo se puede cambiar desde el dc_FechaEntrada directamente
         txt_IdProducto.setText(TablaListado.getValueAt(fila, 3).toString());
         txt_NombreProducto.setText(TablaListado.getValueAt(fila, 4).toString());
-        txt_EspecificacionProducto.setText(TablaListado.getValueAt(fila, 5).toString());
+        txt_Responsable.setText(TablaListado.getValueAt(fila, 5).toString());
         txt_IdUnidadCompra.setText(TablaListado.getValueAt(fila, 6).toString());
         txt_UnidadCompra.setText(TablaListado.getValueAt(fila, 7).toString());
         txt_IdUnidadProducto.setText(TablaListado.getValueAt(fila, 8).toString());
@@ -1215,14 +1197,15 @@ public class VAvances extends javax.swing.JFrame {
         txt_RelacionUcUp.setText(TablaListado.getValueAt(fila, 10).toString());
         txt_MarcaProducto.setText(TablaListado.getValueAt(fila, 11).toString());
         txt_CantidadProducto.setText(TablaListado.getValueAt(fila, 12).toString());
-        txt_CantEntInventario.setText(TablaListado.getValueAt(fila, 13).toString());
-        txt_CantSalInventario.setText(TablaListado.getValueAt(fila, 14).toString());
+        txt_CantContractual.setText(TablaListado.getValueAt(fila, 13).toString());
+        txt_IdAvance.setText(TablaListado.getValueAt(fila, 14).toString());
         txt_PrecioNeto.setText(TablaListado.getValueAt(fila, 15).toString());
-        txt_DescuentoProdEnt.setText(TablaListado.getValueAt(fila, 16).toString());
+        txt_CantidadAvance.setText(TablaListado.getValueAt(fila, 16).toString());
         txt_ImpuestoProdEnt.setText(TablaListado.getValueAt(fila, 17).toString());
         txt_SubtotalProdEnt.setText(TablaListado.getValueAt(fila, 18).toString());
         cbo_EstadoProDent.setSelectedItem(TablaListado.getValueAt(fila, 19).toString());
         txt_AcumSubtoAnteior.setText(TablaListado.getValueAt(fila, 20).toString());
+        */
     }//GEN-LAST:event_TablaListadoMouseClicked
 
     private void txt_totalnetoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_totalnetoActionPerformed
@@ -1249,9 +1232,9 @@ public class VAvances extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btn_buscar1ActionPerformed
 
-    private void txt_IdItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_IdItem1ActionPerformed
+    private void txt_IdItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_IdItemActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txt_IdItem1ActionPerformed
+    }//GEN-LAST:event_txt_IdItemActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1309,8 +1292,7 @@ public class VAvances extends javax.swing.JFrame {
     private javax.swing.JButton btn_guardar;
     private javax.swing.JButton btn_nuevo1;
     private javax.swing.JButton btn_salir;
-    private javax.swing.JComboBox<String> cbo_EstadoProDent1;
-    public static com.toedter.calendar.JDateChooser dc_FechaEntrada;
+    private javax.swing.JComboBox<String> cbo_Estado;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
@@ -1348,25 +1330,26 @@ public class VAvances extends javax.swing.JFrame {
     private javax.swing.JTextField txt_AcumSubtoAnteior;
     private javax.swing.JTextField txt_CantAcumActual;
     private javax.swing.JTextField txt_CantAcumAnterior;
-    private javax.swing.JTextField txt_CantEntInventario;
-    private javax.swing.JTextField txt_CantSalInventario;
+    private javax.swing.JTextField txt_CantContractual;
     private javax.swing.JTextField txt_CantSaldoActual;
+    private javax.swing.JTextField txt_CantidadAvance;
     public static javax.swing.JTextField txt_DescuentoEntrada;
-    private javax.swing.JTextField txt_DescuentoProdEnt;
     private javax.swing.JTextField txt_DescuentoTotal;
     private javax.swing.JTextField txt_Entradas;
-    public static javax.swing.JTextField txt_EspecificacionProducto;
-    public static javax.swing.JTextField txt_EspecificacionProducto1;
     public static javax.swing.JTextField txt_EspecificacionProductoDetalle;
+    public static javax.swing.JTextField txt_FechaAvance;
+    private javax.swing.JTextField txt_IdAvance;
     public static javax.swing.JTextField txt_IdDetalleProducto;
-    public static javax.swing.JTextField txt_IdItem1;
+    public static javax.swing.JTextField txt_IdItem;
     public static javax.swing.JTextField txt_IdPresupuesto;
     public static javax.swing.JTextField txt_IdProveedor;
     public static javax.swing.JTextField txt_ImpuestoEntrada;
     private javax.swing.JTextField txt_ImpuestoTotal;
+    public static javax.swing.JTextField txt_NombreItem;
     public static javax.swing.JTextField txt_NombreProducto;
     public static javax.swing.JTextField txt_NombreProductoDetalle;
     private javax.swing.JTextField txt_PrecioContratado;
+    public static javax.swing.JTextField txt_Responsable;
     private javax.swing.JTextField txt_Saldo;
     private javax.swing.JTextField txt_SaldoActual;
     private javax.swing.JTextField txt_Salidas;

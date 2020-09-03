@@ -5,6 +5,8 @@
  */
 package pruebas;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Gladys Lopera

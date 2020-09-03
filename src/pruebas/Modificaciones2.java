@@ -5,6 +5,8 @@
  */
 package pruebas;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Gladys Lopera
@@ -54,7 +56,6 @@ public class Modificaciones2 extends javax.swing.JFrame {
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
-        dc_FechaEntrada = new com.toedter.calendar.JDateChooser();
         jLabel22 = new javax.swing.JLabel();
         jComboBox1 = new javax.swing.JComboBox<>();
         jScrollPane4 = new javax.swing.JScrollPane();
@@ -239,9 +240,6 @@ public class Modificaciones2 extends javax.swing.JFrame {
         jLabel12.setForeground(new java.awt.Color(0, 0, 102));
         jLabel12.setText("ID Item");
 
-        dc_FechaEntrada.setForeground(new java.awt.Color(0, 0, 102));
-        dc_FechaEntrada.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
-
         jLabel22.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
         jLabel22.setForeground(new java.awt.Color(0, 0, 102));
         jLabel22.setText("Fecha de modificacion");
@@ -336,10 +334,8 @@ public class Modificaciones2 extends javax.swing.JFrame {
                                                         .addComponent(txt_ObservacionEstado, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))))))
                                     .addComponent(cbo_EstadoProDent1, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGroup(jPanel2Layout.createSequentialGroup()
-                                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(dc_FechaEntrada, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jLabel22))
-                                        .addGap(18, 18, 18)
+                                        .addComponent(jLabel22)
+                                        .addGap(51, 51, 51)
                                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE))))
@@ -367,10 +363,8 @@ public class Modificaciones2 extends javax.swing.JFrame {
                     .addComponent(jLabel4)
                     .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 13, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(dc_FechaEntrada, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(26, 26, 26)
+                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(29, 29, 29)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
                     .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -1196,7 +1190,6 @@ public class Modificaciones2 extends javax.swing.JFrame {
     private javax.swing.JButton btn_salir;
     private javax.swing.JComboBox<String> cbo_EstadoProDent;
     private javax.swing.JComboBox<String> cbo_EstadoProDent1;
-    public static com.toedter.calendar.JDateChooser dc_FechaEntrada;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
